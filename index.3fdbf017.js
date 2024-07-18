@@ -1,0 +1,2 @@
+document.querySelectorAll("li").forEach(function(e){e.childNodes.forEach(function(e){if(e.nodeType===Node.TEXT_NODE){var t=e.textContent.trim(),n=document.createElement("span");n.className="listHead",n.textContent=t,e.parentNode.insertBefore(n,e),e.remove()}})}),document.addEventListener("click",function(e){var t=e.target;if(t.classList.contains("listHead")){var n=t.nextElementSibling;"none"===n.style.display?n.style.display="block":n.style.display="none"}});
+//# sourceMappingURL=index.3fdbf017.js.map
